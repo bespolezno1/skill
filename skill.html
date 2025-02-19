@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="app.js">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".razd");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", function () {
+                // Удаляем класс active у всех кнопок
+                buttons.forEach((btn) => btn.classList.remove("active"));
+
+                // Добавляем active только на нажатую кнопку
+                button.classList.add("active");
+            });
+        });
+    });
+</script>
+
+<body>
+    <div class="group44">
+        <div class="frame-202">
+            <button class="razd active">ТЕСТИРОВАНИЯ</button>
+            <button class="razd">РАЗДЕЛЫ</button>
+            <button class="razd">РЕЙТИНГ</button>
+            <button class="razd">МАГАЗИН</button>
+            <button class="razd">ПРОФИЛЬ</button>
+            <button class="razd">ЕЩЕ</button>
+        </div>
+        <h1 class="skillmaster">SKILLMASTER</h1>
+        <div class="rectangle">
+
+        </div>
+    </div>
+</body>
+</html>
