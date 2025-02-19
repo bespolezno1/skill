@@ -1,0 +1,46 @@
+.ellipses-container {
+    position: absolute;
+    bottom: 0; 
+    left: 0;   
+    pointer-events: none; 
+    overflow: visible; 
+    pointer-events: none;
+  }
+  
+  .ellipse {
+    position: absolute;
+    border-radius: 50%; 
+    background-color: transparent; 
+    border: 3px solid #FDB941; 
+    z-index: -1;
+  }
+  
+  /* Первый (самый маленький) эллипс */
+  .ellipse-1 {
+    width: 461.13px;
+    height: 461.14px;
+    bottom: -320px; 
+    left: -90px;    
+    transform: rotate(34.87deg); 
+    z-index: -1;
+  }
+  
+  /* Второй эллипс (больше первого) */
+  .ellipse-2 {
+    width: 687.02px;
+    height: 687.02px;
+    bottom: -390px;  
+    left: -150px;  
+    transform: rotate(34.87deg); 
+    z-index: -1;
+  }
+  
+  /* Третий эллипс (самый большой) */
+  .ellipse-3 {
+    width: 908.75px;
+    height: 908.75px;
+    bottom: -450px;  
+    left: -210px;  
+    transform: rotate(34.87deg); 
+    z-index: -1;
+  }

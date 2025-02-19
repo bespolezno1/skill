@@ -1,0 +1,42 @@
+.ellipses-container-left {
+    position: absolute;
+    top: 0;  /* Помещаем контейнер в верхнюю часть экрана */
+    left: 0; /* Помещаем контейнер в левую часть экрана */
+    pointer-events: none; /* Чтобы эллипсы не мешали взаимодействию с другими элементами */
+    overflow: visible; /* Оставляем видимость, если эллипсы выходят за границы */
+    pointer-events: none;
+}
+
+.ellipses-container-left .ellipse {
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #E66385 !important; /* Добавляем !important */
+}
+
+/* Первый (самый маленький) эллипс */
+.left-ellipse-1 {
+    width: 348px;
+    height: 348px;
+    top: -154px;  /* Подгоняем вверх */
+    left: -140px; /* Подгоняем влево */
+    transform: rotate(34.87deg);
+}
+
+/* Второй эллипс (больше первого) */
+.left-ellipse-2 {
+    width: 519px;
+    height: 519px;
+    top: -214px;
+    left: -200px;
+    transform: rotate(34.87deg);
+}
+
+/* Третий эллипс (самый большой) */
+.left-ellipse-3 {
+    width: 686px;
+    height: 686px;
+    top: -284px;
+    left: -260px;
+    transform: rotate(34.87deg);
+}

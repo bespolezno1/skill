@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Чтобы занять всю высоту экрана */
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+    
+  }
+  .group44 {
+    position: fixed; /* Фиксируем блок на экране */
+    top: 0; /* Прижимаем к верху */
+    left: 0; /* Прижимаем к левому краю */
+    width:365px; /* Фиксированная ширина панели */
+    height: 100vh; /* Высота на весь экран */
+    background-color: white; /* Цвет для наглядности */
+    border: 2px solid #8529CE;
+}
+  .frame-202{
+    position: relative;
+     width: 305px;
+     height: 460px;
+     top: 148px;
+     left: 30px;
+     gap: 20px;
+     display: flex; /* Используем flexbox */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    gap: 20px; 
+  }
+  .razd, .razd-test {
+    width: 305px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 16px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    text-align: center;
+    border: none;
+    transition: 0.3s; /* Плавное переключение */
+}
+
+/* Обычная кнопка */
+.razd {
+    color: #8529CE;
+    background-color: white;
+}
+
+/* Активная кнопка */
+.razd.active {
+    color: white;
+    background-color: #8529CE;
+}
+  .skillmaster {
+    position: absolute;
+    width: 305px;
+    height: 31px;
+    top: 48px;
+    left: 30px;
+    color: #8529CE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+  }
